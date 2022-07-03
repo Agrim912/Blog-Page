@@ -1,0 +1,34 @@
+{% extends "layout.html" %}
+{% block body %}
+    <!-- Page Header -->
+    
+    <header class="masthead" style="background-image: url('{{ url_for('static', filename='img/about-bg.jpg') }}')">
+      <div class="overlay"></div>
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-8 col-md-10 mx-auto">
+            <div class="page-heading">
+              <h1>About Me</h1>
+              <span class="subheading">This is what I do.</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <!-- Main Content -->
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-8 col-md-10 mx-auto">
+          <p>Welcome to <i>TheCodingThunder</i>,</p>
+          <p>I’m passionate about reading. Although I have several hobbies, such as watching
+            movies and hiking, reading books is what resonates well with me. There are many
+            reasons why I love reading. The first reason is it gives me a level of fulfillment. That is,
+            books rejuvenate me. After reading a book, I feel like a whole new being and my
+            outlook in life changes.</p>
+          <!-- <p>{{params['about_text']}}</p> -->
+        </div>
+      </div>
+    </div>
+
+   {% endblock %}
